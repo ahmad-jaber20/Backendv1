@@ -55,5 +55,5 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /ahmadjaber
+            cd /root/ahmadjaber
             docker compose up -d --pull always --remove-orphans
