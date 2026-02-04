@@ -55,9 +55,4 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-              pwd
-              ls -la
-              ls -la /root/ahmadjaber
-              bash -lc 'cd /root/ahmadjaber && pwd && ls -la && docker compose config'
-              bash -lc 'cd /root/ahmadjaber && /root/ahmadjaber/script.sh'
-
+            ./root/ahmadjaber/script.sh
